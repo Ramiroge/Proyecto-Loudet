@@ -1,0 +1,22 @@
+.mainIndex{
+    margin: 0px 80px;
+    .carousel{
+        margin: 50px auto;
+        width: 80%;
+        
+        .carousel-caption {
+            left: 0px;
+            width: 100%;
+            text-shadow: black 1px -2px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+            padding: 20px;
+            
+        }
+    }
+    p{
+        font-size: 2rem;
+        margin: 0 150px;
+        text-align: justify;
+        
+    }
+}

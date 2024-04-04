@@ -1,0 +1,28 @@
+
+@import "pages/index.scss";
+@import "pages/vitraux.scss";
+@import "pages/usos.scss";
+@import "pages/galeria.scss";
+@import "pages/trabajos.scss";
+@import "pages/redes.scss";
+
+@import "utilidades/header.scss";
+
+
+
+
+
+
+
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+

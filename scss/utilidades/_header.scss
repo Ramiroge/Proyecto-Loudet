@@ -1,0 +1,45 @@
+
+.container {
+    width: 100%;
+    margin: 50px auto 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: baseline;
+    justify-items: center;
+
+    .logo {
+        justify-self: start;
+        margin-left: 20px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .texto {
+        text-align: center;
+
+        .titulo, .subtitulo {
+            margin: 0;
+        }
+    }
+}
+
+.fixedNav {
+    position:fixed;
+    top: 0;
+    z-index: 1000; /* Ajusta según sea necesario */
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    .active{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}

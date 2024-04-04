@@ -1,0 +1,36 @@
+.mainUsos{
+    .fotosUsos{
+        overflow: hidden;
+        padding: 50px 0;
+        white-space: nowrap;
+        .usos-slide{
+            display: inline-block;
+            animation: 25s slide infinite linear;
+            img{
+                height: 300px;
+            }
+        }
+    }
+}
+
+.fotosUsos:hover .usos-slide {
+    animation-play-state: paused;
+}
+
+.fotosUsos::before,
+.fotosUsos::after{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    content: "";
+    z-index: 2;
+}
+
+.fotosUsos::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white)
+}
+.fotosUsos::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white)
+}

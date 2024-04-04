@@ -1,0 +1,84 @@
+.mainVitraux{
+    h3{
+        margin: 50px 0px;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    img{
+        width: 600px;
+    }
+    .gridVitraux{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        
+        justify-items: center;
+        .imagen1{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .imagen2{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .imagen3{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .imagen4{
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        .texto1{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            padding: 40px;
+            margin: 40px;
+            background-color: bisque;
+            border-radius: 60px;
+
+            font-size: 2rem;
+            text-align: center;
+            align-self: center;
+            
+        }
+        .texto2{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            padding: 40px;
+            margin: 40px;
+            background-color: bisque;
+            border-radius: 60px;
+
+            font-size: 2rem;
+            text-align: center;
+            align-self: center;
+        }
+        .texto3{
+            grid-column: 2/3;
+            grid-row: 3/4;
+            padding: 40px;
+            margin: 40px;
+            background-color: bisque;
+            border-radius: 60px;
+
+            font-size: 2rem;
+            text-align: center;
+            align-self: center;
+        }
+        .texto4{
+            grid-column: 1/2;
+            grid-row: 4/5;
+            padding: 40px;
+            margin: 40px;
+            background-color: bisque;
+            border-radius: 60px;
+
+            font-size: 2rem;
+            text-align: center;
+            align-self: center;
+        }
+    }
+}
