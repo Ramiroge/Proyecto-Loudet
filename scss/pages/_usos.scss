@@ -1,36 +1,52 @@
-.mainUsos{
-    .fotosUsos{
+.mainUsos {
+    h3 {
+        margin: 50px 0px;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    p {
+        text-align: justify; /* Alineación justificada */
+        margin: 0 auto; /* Margen automático a los lados */
+        max-width: 1200px; /* Ancho máximo para mejor legibilidad */
+        padding: 20px; /* Espaciado interno */
+        font-size: 1.1rem; /* Tamaño de fuente */
+        line-height: 1.6; /* Altura de línea para mejor legibilidad */
+        font-family: 'Arial', sans-serif; /* Tipo de fuente */
+    }
+    
+    .fotosUsos {
         overflow: hidden;
         padding: 50px 0;
         white-space: nowrap;
-        .usos-slide{
+        .usos-slide {
             display: inline-block;
             animation: 25s slide infinite linear;
-            img{
+            img {
                 height: 300px;
             }
         }
     }
-}
 
-.fotosUsos:hover .usos-slide {
-    animation-play-state: paused;
-}
+    .fotosUsos:hover .usos-slide {
+        animation-play-state: paused;
+    }
 
-.fotosUsos::before,
-.fotosUsos::after{
-    position: absolute;
-    width: 250px;
-    height: 300px;
-    content: "";
-    z-index: 2;
-}
+    .fotosUsos::before,
+    .fotosUsos::after {
+        position: absolute;
+        width: 250px;
+        height: 300px;
+        content: "";
+        z-index: 2;
+    }
 
-.fotosUsos::before{
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white)
-}
-.fotosUsos::after{
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white)
+    .fotosUsos::before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    }
+
+    .fotosUsos::after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    }
 }

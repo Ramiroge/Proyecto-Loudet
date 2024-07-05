@@ -1,0 +1,39 @@
+.mainTrabajos {
+    padding: 0px 50px;
+    h3 {
+        margin: 50px 0px;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #333;
+    }
+    .contenedorImagenesTrabajos {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
+
+        img {
+            width: 45%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+    p {
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 20px;
+    }
+    ul {
+        columns: 2; // Para hacer que los ítems se distribuyan en dos columnas
+        column-gap: 30px;
+        list-style-type: disc;
+        padding-left: 20px;
+        font-size: 1rem;
+        color: #555;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
